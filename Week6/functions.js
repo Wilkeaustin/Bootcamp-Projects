@@ -27,17 +27,6 @@ function main ()
     }
 }
 
-
-//Game Initialization ^
-
-
-
-
-
-
-//Player customization^
-
-
 function populateDeck(deck) 
 { 
     /* Deck population is a nested loop 
@@ -54,8 +43,7 @@ function populateDeck(deck)
     }
 }
 
-//Make Deck
-
+// Get value of passed in card
 function getValue(string)
 {
     switch(string)
