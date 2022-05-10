@@ -1,9 +1,16 @@
 var expect = chai.expect;
 
-describe('MyFunctions', function() {
-    describe('#createDeck', function() {
-        it('should create a deck of cards for a total of 52 cards', function () {
-            var  = initGame('')
-        })
-    })
-})
+decsribe('MyFunctions', function() {
+    describe('#getValue', function()  {
+        it('should take a specified case and give it a value', function() {
+        var king = getValue('King');
+        expect(king).to.equal(13);
+        });
+
+        it('should default to parseInt if it is not one of the cases', function() { 
+        expect(function() {
+            getValue('15');
+            }).to.equal(15);
+        });
+    });
+});
