@@ -1,0 +1,22 @@
+.my-custom-row {
+    height: 300px;
+    background-color: bisque;
+    text-decoration: underline;
+    margin: auto;
+}
+
+#navbarNavDropdown {
+    justify-content: center;
+}
+
+#title {
+    padding-left: 1.5%;
+    font-weight: bold;
+    text-decoration: overline underline 5px;
+    margin: auto;
+    padding-bottom: 3px;
+}
+
+#menu {
+    background-color: rgb(35, 202, 35);
+}

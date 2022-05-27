@@ -1,0 +1,116 @@
+body 
+{
+    background-color: rgb(82, 74, 74);
+    text-align: center;   
+}
+
+h1, h2
+{
+    text-align: center;
+    border: groove;
+}
+
+div
+{
+    font-size: large;
+}
+
+table 
+{
+    font-size: larger;
+    color: rgb(250, 250, 0);
+    padding: 5px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td, tr
+{
+    padding: 2%;
+    text-align: center;
+    
+}
+
+form
+{
+    margin-left: 645px;
+    height: 50px;
+    width: 50px;
+}
+
+.center
+{
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p
+{
+    color: rgb(250, 250, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+input
+{
+    width: 225px;
+}
+
+a:visited
+{
+    color: lightgray;
+}
+
+a:hover
+{
+    color: cornflowerblue;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active
+{
+    color: lightgray;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+#pricing
+{
+    border-style: solid;
+    border-color: black;
+    border-radius: 60px 60px 60px 60px ;
+    background-color: darkgray;
+    font-weight: bold;
+    text-decoration: underline;
+    color: black;
+    padding-left: 60px;
+}
+
+a, #home-link, #background-link, #contact-link
+{
+    margin-left: 50px;
+    margin-right: 50px;
+    font-weight: bold;
+}
+
+#games
+{
+    margin: 10px 5px 10px 5px;
+}
+
+p #titles
+{
+    text-decoration:double underline overline black;
+    color: rgb(0, 0, 0)
+}
+
+#socials
+{
+    margin: auto;
+}
+
+
+
