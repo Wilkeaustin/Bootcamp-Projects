@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container-fluid">
+
+  <h1 id="title" class="col-4 bg-primary text-light" align="center">Customer Information</h1>
+
+  <!-- Belows this comment is my styled table -->
+      <table class="table table-bordered bg-secondary table-hover text-light">
+          <thead>
+            <tr>
+              <th scope="col">First</th>
+              <th scope="col">Last</th>
+              <th scope="col">Email</th>
+              <th scope="col">Phone Number</th>
+              <th scope="col">Shipping Address</th>
+              <th scope="col">Zip Code</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Austin</td>
+              <td>Wilke</td>
+              <td>wilkeaustin@yahoo.com</td>
+              <td>513-301-4690</td>
+              <td>1848 North Choctaw Court, Fayetteville, AR</td>
+              <td>72701</td>
+            </tr>
+            <tr>
+              <td>Mark</td>
+              <td>Ramirez</td>
+              <td>mramirez@aol.com</td>
+              <td>480-468-1938</td>
+              <td>14800 88th St, Peoria, AZ</td>
+              <td>85382</td>
+            </tr>
+            <tr>
+              <td>Hope</td>
+              <td>Wilson</td>
+              <td>hwilson@gmail.com</td>
+              <td>513-332-8345</td>
+              <td>860 Weller Ave, Hamilton, OH</td>
+              <td>45015</td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- End styled table -->
+  
+        <form id="form" class="row bg-light g-3">
+          <div class="col-md-6">
+            <label for="inputFirst4" class="form-label" id="name1">First Name</label>
+            <input type="firstName" class="form-control" id="inputFirstName4" required>
+          </div>
+          <div class="col-md-6">
+            <label for="inputLast4" class="form-label" id="name2">Last Name</label>
+            <input type="lastName" class="form-control" id="inputLastName4" required>
+          </div>
+          <div class="col-6">
+            <label for="inputEmail" class="form-label" id="email">Email</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="email@website.com" required>
+          </div>
+          <div class="col-md-6">
+              <label for="inputPhone#" class="form-label" id="phone#">Phone Number</label>
+              <input type="phone#" class="form-control" id="inputPhone#" placeholder="555-555-5555" required>
+            </div>
+          <div class="col-12">
+            <label for="inputAddress" class="form-label" id="address">Address</label>
+            <input type="text" class="form-control" id="inputAddress" required>
+          </div>
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label" id="city">City</label>
+            <input type="text" class="form-control" id="inputCity" required>
+          </div>
+          <div class="col-md-4">
+            <label for="inputState" class="form-label" id="state">State</label>
+            <select id="inputState" class="form-select" required>
+              <option selected>Choose...</option>
+              <option value="AL">Alabama</option>
+              <option value="AK">Alaska</option>
+              <option value="AZ">Arizona</option>
+              <option value="AR">Arkansas</option>
+              <option value="CA">California</option>
+              <option value="CO">Colorado</option>
+              <option value="CT">Connecticut</option>
+              <option value="DE">Delaware</option>
+              <option value="DC">District Of Columbia</option>
+              <option value="FL">Florida</option>
+              <option value="GA">Georgia</option>
+              <option value="HI">Hawaii</option>
+              <option value="ID">Idaho</option>
+              <option value="IL">Illinois</option>
+              <option value="IN">Indiana</option>
+              <option value="IA">Iowa</option>
+              <option value="KS">Kansas</option>
+              <option value="KY">Kentucky</option>
+              <option value="LA">Louisiana</option>
+              <option value="ME">Maine</option>
+              <option value="MD">Maryland</option>
+              <option value="MA">Massachusetts</option>
+              <option value="MI">Michigan</option>
+              <option value="MN">Minnesota</option>
+              <option value="MS">Mississippi</option>
+              <option value="MO">Missouri</option>
+              <option value="MT">Montana</option>
+              <option value="NE">Nebraska</option>
+              <option value="NV">Nevada</option>
+              <option value="NH">New Hampshire</option>
+              <option value="NJ">New Jersey</option>
+              <option value="NM">New Mexico</option>
+              <option value="NY">New York</option>
+              <option value="NC">North Carolina</option>
+              <option value="ND">North Dakota</option>
+              <option value="OH">Ohio</option>
+              <option value="OK">Oklahoma</option>
+              <option value="OR">Oregon</option>
+              <option value="PA">Pennsylvania</option>
+              <option value="RI">Rhode Island</option>
+              <option value="SC">South Carolina</option>
+              <option value="SD">South Dakota</option>
+              <option value="TN">Tennessee</option>
+              <option value="TX">Texas</option>
+              <option value="UT">Utah</option>
+              <option value="VT">Vermont</option>
+              <option value="VA">Virginia</option>
+              <option value="WA">Washington</option>
+              <option value="WV">West Virginia</option>
+              <option value="WI">Wisconsin</option>
+              <option value="WY">Wyoming</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <label for="inputZip" class="form-label" id="zip">Zip</label>
+            <input type="text" class="form-control" id="inputZip" required>
+          </div>
+          <div class="col-12">
+            <button id="btn" type="submit" class="btn btn-primary" value="submission">Submit Customer</button>
+          </div>
+        </form>
+
+
+
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
