@@ -1,2 +1,0 @@
-# BootCamp
-something normal
