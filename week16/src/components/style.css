@@ -1,0 +1,91 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b2d6c5;
+  }
+
+  h2 {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .burgerBG {
+    opacity: 30%;
+    position: relative;
+  }
+
+  pages {
+    position: absolute;
+    top: 20px;
+  }
+
+.burger-pfp, img {
+  height: 40px;
+  width: 40px;
+  justify-content: flex-end;
+  display: flex;
+}
+
+.container-width {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  min-width: 500px;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  align-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.burgerInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.imageUpload {
+  max-width: 40px;
+  min-height: 20px;
+}
+
+#burgerBtn {
+  max-width: fit-content;
+  background-color: #b2d6c5;
+}
+
+.pfpHeader {
+  display: flex;
+  justify-content: center;
+}
+
+.burgerName {
+  padding-right: 5px;
+  padding-top: 7px;
+}
+
+.profileCard {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

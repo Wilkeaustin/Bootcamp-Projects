@@ -1,0 +1,10 @@
+div {
+  background-color: #d1e7dd;
+}
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: #d1e7dd;
+}
