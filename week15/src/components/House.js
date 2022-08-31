@@ -12,19 +12,18 @@ export const House = (props) => {
         updateHouse(updatedHouse);
     }
 
-    const addNewRoom = (room) => {
-        updateHouse({...house, rooms: [...house.rooms, room]});
+    const addNewRoom = (room) => updateHouse({ ...house, rooms: [...house.rooms, room]});
 
-    const rooms = () => {
+    const rooms = () => (
         <ul>
-            {house.rooms.map((room, index) => 
+            {house.rooms.map((room, index) => (
                 <li key={index}>
                     <label> {`${room.name} Area: ${room.area}`}</label>
                     <button onClick={(e) => deleteRoom(room._id)}>Delete</button>
                 </li>
-            )}
+            ))}
         </ul>
-    };
+    );
 
     return (
         <div>
@@ -34,7 +33,6 @@ export const House = (props) => {
             }
             <NewRoomForm addNewRoom={addNewRoom} />
         </div>
-    )
-    };
+    );
 };
 

@@ -36,3 +36,5 @@ export class HousesList extends React.Component {
     }
 
 }
+
+export default HousesList;

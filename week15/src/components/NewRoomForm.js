@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
 export const NewRoomForm = (props) => {
-    const {name, setName} = useState('');
-    const {area, setArea} = useState(undefined);
+    const [name, setName] = useState('');
+    const [area, setArea] = useState('');
 
     const handleAreaInput = (e) => {
         const int = parseInt(e.target.value, 10);
@@ -17,9 +17,11 @@ export const NewRoomForm = (props) => {
            setArea(''); 
         } else {
             console.log('invalid input');
+            console.log(onSubmit);
         }
-    }
+    };
 
+    
 
 return (
     <div>
@@ -37,9 +39,12 @@ return (
         onChange={handleAreaInput}
         value={area}
         />
-        <button type='submit'>Add Room</button>
+        <button type='submit' onSubmit={onSubmit}>Add Room</button>
         </form>
+        
     </div>
 )
 
 };
+
+export default NewRoomForm;
